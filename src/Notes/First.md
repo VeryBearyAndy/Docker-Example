@@ -9,7 +9,15 @@
         + what this process will look like
         + how this is the begining of a CICD pipeline
 # steps so far
-+ 1 create a program
++ 1 create a program below is an example of basic C program 
+    ```C
+    #include <stdio.h>
+
+    int main(void){
+        printf("hello world from a C application running in ubuntu!\n");
+        return(0);
+    }
+    ```
 + 2 define the dependancies and evironment this program will run in
 + 3 write a Dockerfile to construct a container image
     + 3.1 build the image from the Dockerfile 
@@ -22,4 +30,15 @@
 
     //optionally you can add tag -d to detach it
     //optionally you can add tag -p to specify the host port
+    ```
+
+# Example of a recompile and use of cached systems
++ 1 change the code base
+    ```C
+        #include <stdio.h>
+
+    int main(void){
+        printf("hello world from a C application running in ubuntu Version 2 FUCK YEAH!\n");
+        return(0);
+    }
     ```
